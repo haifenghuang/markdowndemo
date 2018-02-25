@@ -16,30 +16,38 @@
   * [Person](#Person)
 
 ## Lets
+
+### a
 ```monkey
 let a = 12;
 ```
 variable a is a constant
 
 ## Enums
+
+### LogOption
 ```monkey
 enum LogOption{
-        Ltime = (1 << 1),
         Lmicroseconds = (1 << 2),
         Llongfile = (1 << 3),
         Lshortfile = (1 << 4),
         LUTC = (1 << 5),
         LstdFlags = ((1 << 4) | (1 << 5)),
-        Ldate = (1 << 0)
+        Ldate = (1 << 0),
+        Ltime = (1 << 1)
 }
 ```
 The LogOption enum is defined for Log options.
 
 ## Functions
+
+### add
 ```monkey
 fn add (x, y)
 ```
 Add two parameters.
+
+### sub
 ```monkey
 fn sub (x, y)
 ```
@@ -47,7 +55,7 @@ Substract two parameters.
 
 ## Classes
 
-### `IndexedNames`
+### IndexedNames
 ```monkey
 class IndexedNames{ ... }
 ```
@@ -65,7 +73,7 @@ property this[index] { get; set; }
 ```
 This is the indexer property
 
-### `Person`
+### Person
 ```monkey
 class Person{ ... }
 ```
