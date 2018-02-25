@@ -1,19 +1,21 @@
-# File `11.my`
-## Index
 
+# File `11.my`
+
+Table of Contents
+=================
 * Lets
   * [a](#a)
 
 * Enums
-  * [LogOption](#LogOption)
+  * [Log](#log)
 
 * Functions
   * [add](#add)
   * [sub](#sub)
 
 * Classes
-  * [IndexedNames](#IndexedNames)
-  * [Person](#Person)
+  * [IndexedNames](#indexednames)
+  * [Person](#person)
 
 ## Lets
 
@@ -23,18 +25,19 @@ let a = 12;
 ```
 variable a is a constant
 
+
 ## Enums
 
-### LogOption
+### Log
 ```monkey
 enum LogOption{
-        Lmicroseconds = (1 << 2),
-        Llongfile = (1 << 3),
         Lshortfile = (1 << 4),
         LUTC = (1 << 5),
         LstdFlags = ((1 << 4) | (1 << 5)),
         Ldate = (1 << 0),
-        Ltime = (1 << 1)
+        Ltime = (1 << 1),
+        Lmicroseconds = (1 << 2),
+        Llongfile = (1 << 3)
 }
 ```
 The LogOption enum is defined for Log options.
